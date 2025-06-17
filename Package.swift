@@ -22,12 +22,7 @@ let package = Package(
                 .product(name: "Cordova", package: "capacitor-swift-pm"),
                 .product(name: "SwiftKeychainWrapper", package: "SwiftKeychainWrapper")
             ],
-            path: "ios/Sources"
-        ),
-        .testTarget(
-            name: "GenericOAuth2PluginTests",
-            dependencies: ["SecureStoragePlugin"],
-            path: "ios/Tests"
+            path: "ios/Plugin"
         )
     ]
 )
